@@ -2,7 +2,7 @@ package util
 
 import (
 	tea "charm.land/bubbletea/v2"
-	"github.com/charmbracelet/crush/internal/uiutil"
+	"github.com/0pcom/crush/internal/uiutil"
 )
 
 type Cursor = uiutil.Cursor

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/charmbracelet/crush/internal/oauth"
+	"github.com/0pcom/crush/internal/oauth"
 )
 
 const clientId = "9d1c250a-e61b-44d9-88ed-5944d1962f5e"

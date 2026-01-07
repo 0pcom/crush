@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/charmbracelet/crush/internal/log"
+	"github.com/0pcom/crush/internal/log"
 )
 
 // NewClient creates a new HTTP client with a custom transport that adds the

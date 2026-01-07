@@ -18,12 +18,12 @@ import (
 	"testing"
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
-	"github.com/charmbracelet/crush/internal/agent/hyper"
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/env"
-	"github.com/charmbracelet/crush/internal/fsext"
-	"github.com/charmbracelet/crush/internal/home"
-	"github.com/charmbracelet/crush/internal/log"
+	"github.com/0pcom/crush/internal/agent/hyper"
+	"github.com/0pcom/crush/internal/csync"
+	"github.com/0pcom/crush/internal/env"
+	"github.com/0pcom/crush/internal/fsext"
+	"github.com/0pcom/crush/internal/home"
+	"github.com/0pcom/crush/internal/log"
 	powernapConfig "github.com/charmbracelet/x/powernap/pkg/config"
 )
 

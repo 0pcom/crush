@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/filetracker"
-	"github.com/charmbracelet/crush/internal/history"
-	"github.com/charmbracelet/crush/internal/lsp"
-	"github.com/charmbracelet/crush/internal/permission"
-	"github.com/charmbracelet/crush/internal/pubsub"
+	"github.com/0pcom/crush/internal/csync"
+	"github.com/0pcom/crush/internal/filetracker"
+	"github.com/0pcom/crush/internal/history"
+	"github.com/0pcom/crush/internal/lsp"
+	"github.com/0pcom/crush/internal/permission"
+	"github.com/0pcom/crush/internal/pubsub"
 	"github.com/stretchr/testify/require"
 )
 

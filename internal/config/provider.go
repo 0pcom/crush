@@ -17,9 +17,9 @@ import (
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 	"github.com/charmbracelet/catwalk/pkg/embedded"
-	"github.com/charmbracelet/crush/internal/agent/hyper"
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/home"
+	"github.com/0pcom/crush/internal/agent/hyper"
+	"github.com/0pcom/crush/internal/csync"
+	"github.com/0pcom/crush/internal/home"
 	"github.com/charmbracelet/x/etag"
 )
 

@@ -14,11 +14,11 @@ import (
 	"strings"
 
 	tea "charm.land/bubbletea/v2"
-	"github.com/charmbracelet/crush/internal/agent/tools/mcp"
-	"github.com/charmbracelet/crush/internal/config"
-	"github.com/charmbracelet/crush/internal/home"
-	"github.com/charmbracelet/crush/internal/tui/components/chat"
-	"github.com/charmbracelet/crush/internal/tui/util"
+	"github.com/0pcom/crush/internal/agent/tools/mcp"
+	"github.com/0pcom/crush/internal/config"
+	"github.com/0pcom/crush/internal/home"
+	"github.com/0pcom/crush/internal/tui/components/chat"
+	"github.com/0pcom/crush/internal/tui/util"
 )
 
 type CommandType uint

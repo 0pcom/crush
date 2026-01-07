@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/charmbracelet/crush/internal/event"
+	"github.com/0pcom/crush/internal/event"
 	"github.com/spf13/cobra"
 )
 

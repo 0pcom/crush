@@ -10,8 +10,8 @@ import (
 	"sync"
 
 	"github.com/charlievieth/fastwalk"
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/home"
+	"github.com/0pcom/crush/internal/csync"
+	"github.com/0pcom/crush/internal/home"
 	ignore "github.com/sabhiram/go-gitignore"
 )
 

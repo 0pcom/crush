@@ -9,14 +9,14 @@ import (
 
 	"charm.land/lipgloss/v2"
 	"charm.land/lipgloss/v2/tree"
-	"github.com/charmbracelet/crush/internal/agent"
-	"github.com/charmbracelet/crush/internal/agent/tools"
-	"github.com/charmbracelet/crush/internal/ansiext"
-	"github.com/charmbracelet/crush/internal/fsext"
-	"github.com/charmbracelet/crush/internal/tui/components/chat/todos"
-	"github.com/charmbracelet/crush/internal/tui/components/core"
-	"github.com/charmbracelet/crush/internal/tui/highlight"
-	"github.com/charmbracelet/crush/internal/tui/styles"
+	"github.com/0pcom/crush/internal/agent"
+	"github.com/0pcom/crush/internal/agent/tools"
+	"github.com/0pcom/crush/internal/ansiext"
+	"github.com/0pcom/crush/internal/fsext"
+	"github.com/0pcom/crush/internal/tui/components/chat/todos"
+	"github.com/0pcom/crush/internal/tui/components/core"
+	"github.com/0pcom/crush/internal/tui/highlight"
+	"github.com/0pcom/crush/internal/tui/styles"
 	"github.com/charmbracelet/x/ansi"
 )
 
