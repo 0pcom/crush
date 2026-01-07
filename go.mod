@@ -1,4 +1,4 @@
-module github.com/charmbracelet/crush
+module github.com/0pcom/crush
 
 go 1.25.5
 
@@ -20,6 +20,7 @@ require (
 	github.com/charlievieth/fastwalk v1.0.14
 	github.com/charmbracelet/catwalk v0.12.2
 	github.com/charmbracelet/colorprofile v0.4.1
+	github.com/charmbracelet/crush v0.31.0
 	github.com/charmbracelet/fang v0.4.4
 	github.com/charmbracelet/ultraviolet v0.0.0-20251212194010-b927aa605560
 	github.com/charmbracelet/x/ansi v0.11.3
@@ -143,7 +144,6 @@ require (
 	github.com/ncruces/julianday v1.0.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
 	github.com/sethvargo/go-retry v0.3.0 // indirect
 	github.com/sourcegraph/jsonrpc2 v0.2.1 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
