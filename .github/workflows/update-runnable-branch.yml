@@ -1,0 +1,67 @@
+name: Update Runnable Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-runnable:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Create or update runnable branch
+        run: |
+          # Check if runnable branch exists remotely
+          if git ls-remote --heads origin runnable | grep -q runnable; then
+            git fetch origin runnable
+            git checkout runnable
+            git reset --hard main
+          else
+            git checkout -b runnable
+          fi
+      
+      - name: Transform module paths
+        run: |
+          # Replace all occurrences of github.com/charmbracelet/crush with github.com/0pcom/crush
+          find . -type f -name '*.go' -not -path './vendor/*' -not -path './.git/*' -exec sed -i 's|github\.com/charmbracelet/crush|github.com/0pcom/crush|g' {} +
+          
+          # Update go.mod module path
+          sed -i 's|^module github\.com/charmbracelet/crush|module github.com/0pcom/crush|' go.mod
+          
+          # Show changes for debugging
+          git diff go.mod | head -20
+      
+      - name: Commit changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated module path transformation for go run compatibility
+
+This branch is auto-generated from main with transformed module paths to enable:
+go run github.com/0pcom/crush@runnable
+
+Changes:
+- Module path: github.com/charmbracelet/crush → github.com/0pcom/crush
+- All import paths updated accordingly
+
+Do not commit directly to this branch - it will be overwritten on next main push."
+          fi
+      
+      - name: Force push to runnable branch
+        run: |
+          git push -f origin runnable
